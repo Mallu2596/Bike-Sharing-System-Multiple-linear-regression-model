@@ -5,50 +5,52 @@ How well those variables describe the bike demands
 
 
 ## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
+* [General Info]
+* [Technologies Used]
+* [Conclusions]
+* [Acknowledgements]
 
-<!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. 
+The company wants to know:
+Which variables are significant in predicting the demand for shared bikes.
+How well those variables describe the bike demands
+Business Goal:
+You are required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features.
+Model Building
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+In the dataset provided, you will notice that there are three columns named 'casual', 'registered', and 'cnt'. The variable 'casual' indicates the number casual users who have made a rental. The variable 'registered' on the other hand shows the total number of registered users who have made a booking on a given day. Finally, the 'cnt' variable indicates the total number of bike rentals, including both casual and registered. The model should be built taking this 'cnt' as the target variable.
+Model Evaluation:
+When you're done with model building and residual analysis and have made predictions on the test set, just make sure you use the following two lines of code to calculate the R-squared score on the test set.
+
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+The demand for the bikes depends on the following fatcors
+Year, Holiday, Summer, Saturday, months of February, January, November, September, Lightsnow+Rain, Mist+Cloudy, atemp
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+The demand increses in
+Summer, November, September, Year 2019 and atemp
+
+The demand decreses in
+Holiday, Sunday, February, January, Lightsnow+Rain, Mist+Cloudy
+
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- panda - version 1.4.2
+- sklearn - version 0.20.1
+- seaborn - version 0.11.2
+- matplotlib - version 2.2.3
+- numpy - version 1.21.5
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
 Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
+- This project was created as a part of assignment, submitted to UPGRADE and IIIT Bangalore 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@Mallu2596] - feel free to contact me!
 
 
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
 
-<!-- You don't have to include all sections - just the one's relevant to your project -->
